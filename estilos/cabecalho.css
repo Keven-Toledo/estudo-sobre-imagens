@@ -10,8 +10,7 @@
 }
 
 .menu__hamburguer,
-.fa-bars,
-.fa-xmark {
+label {
   display: none;
 }
 
@@ -41,11 +40,16 @@
     padding: 20px;
   }
 
+
+  label {
+    display: block;
+  }
+
   .fa-bars {
     display: block;
   }
 
-  .fa-xmark, 
+  label > .fa-xmark, 
   .menu {
     display: none;
   }
