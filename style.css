@@ -1,3 +1,4 @@
+@import url(estilos/cabecalho.css);
 :root {
   --cor__cabecalho: rgb(0, 0, 98);
   --cor__letra: #ffffff;
@@ -25,12 +26,6 @@ strong {
   color: var(--cor__cabecalho);
 }
 
-.cabecalho {
-  background-color: var(--cor__cabecalho);
-  padding: 50px;
-  text-align: center;
-}
-
 .botao__flutuante {
   position: fixed;
   right: 15vw;
@@ -51,22 +46,6 @@ strong {
   color: var(--cor__cabecalho);
   right: 14.8vw;
   bottom: 4.8vh;
-}
-
-.menu__item {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: var(--cor__letra);
-  margin-left: 2em;
-  padding: 10px 20px;
-  background-color: var(--cor__botao-menu);
-  border-radius: 20px;
-}
-
-.menu__item:hover {
-  background-color: var(--cor__letra);
-  color: black;
 }
 
 .secao {
@@ -131,3 +110,4 @@ strong {
 .secao__fotos:hover {
   transform: scale(1.1);
 }
+

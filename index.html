@@ -10,9 +10,15 @@
   <title>Utilizando imagens em HTML</title>
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/0b22bcc649.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="cabecalho" id="menu">
+    <input type="checkbox" id="menu__hamburguer" class="menu__hamburguer">
+    <label for="menu__hamburguer">
+      <i class="fa-sharp fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </label>
     <nav class="menu">
       <a href="#secao__img" class="menu__item">img</a>
       <a href="#secao__figure" class="menu__item">figure & figcaption</a>
@@ -20,9 +26,10 @@
     </nav>
   </header>
 
-  <a href="#menu">
-    <div class="botao__flutuante">menu</div>
-  </a>
+  <div class="botao__flutuante">
+    <a href="#menu">menu</a>
+  </div>
+ 
 
   <section class="secao" id="secao__img">
     <header>
