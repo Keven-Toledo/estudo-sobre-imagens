@@ -1,0 +1,133 @@
+:root {
+  --cor__cabecalho: rgb(0, 0, 98);
+  --cor__letra: #ffffff;
+  --cor__botao-menu: #5c5cc1;
+  --cor__legenda: #00000086;
+  --cor__primaria: #000529;
+  --cor__secundaria: #004aad;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-image: url("imagens/ondas.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+strong {
+  font-weight: bold;
+  color: var(--cor__cabecalho);
+}
+
+.cabecalho {
+  background-color: var(--cor__cabecalho);
+  padding: 50px;
+  text-align: center;
+}
+
+.botao__flutuante {
+  position: fixed;
+  right: 15vw;
+  bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor__letra);
+  border: 1px solid var(--cor__cabecalho);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 1px black;
+}
+
+.botao__flutuante:active {
+  box-shadow: none;
+  color: var(--cor__cabecalho);
+  right: 14.8vw;
+  bottom: 4.8vh;
+}
+
+.menu__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--cor__letra);
+  margin-left: 2em;
+  padding: 10px 20px;
+  background-color: var(--cor__botao-menu);
+  border-radius: 20px;
+}
+
+.menu__item:hover {
+  background-color: var(--cor__letra);
+  color: black;
+}
+
+.secao {
+  text-align: center;
+  max-width: 700px;
+  margin: 10px auto;
+  background-color: var(--cor__letra);
+  box-shadow: 0px 1px 10px var(--cor__legenda);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.secao__titulo {
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 20px auto;
+  padding: 0 10vw;
+  text-transform: uppercase;
+  background-color: var(--cor__botao-menu);
+  color: var(--cor__letra);
+}
+
+.secao__subtitulo {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 15px;
+}
+
+.secao__texto {
+  text-align: justify;
+  padding: 20px;
+  line-height: 1.2em;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.secao__fotos {
+  width: 330px;
+  margin: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.secao__fotos-imagens {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.secao__fotos-legenda {
+  background-color: var(--cor__legenda);
+  color: var(--cor__letra);
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.secao__fotos:hover {
+  transform: scale(1.1);
+}

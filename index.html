@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilizando imagens em HTML</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="cabecalho" id="menu">
+    <nav class="menu">
+      <a href="#secao__img" class="menu__item">img</a>
+      <a href="#secao__figure" class="menu__item">figure & figcaption</a>
+      <a href="#secao__picture" class="menu__item">picture</a>
+    </nav>
+  </header>
+
+  <a href="#menu">
+    <div class="botao__flutuante">menu</div>
+  </a>
+
+  <section class="secao" id="secao__img">
+    <header>
+      <h2 class="secao__titulo">img</h2>
+      <h3 class="secao__subtitulo">Definição e uso</h3>
+    </header>
+    <blockquote class="secao__texto" cite="https://www.w3schools.com/tags/tag_img.asp">
+      A <strong>tag img</strong> é usada para <strong>incorporar uma imagem</strong> em uma <strong>página HTML</strong>.
+      As imagens <strong>não são</strong> tecnicamente <strong>inseridas em uma página da web</strong>; as imagens estão <strong>vinculadas a páginas da web</strong>.
+    </blockquote> 
+    
+    <img src="imagens/Tags2.png" alt="Código utilizando tag img" class="secao__imagem">
+    
+    <blockquote class="secao__texto" cite="http://www.js-craft.io/blog/when-to-use-the-img-figure-or-picture-html-tags/">
+      O escopo das <strong>img tags</strong> é adicionar uma única imagem interna como <strong>parte de um conteúdo específico</strong>. 
+      Ele deve ser <strong>usado</strong> em um <strong>contêiner</strong> <strong>como um parágrafo</strong> e onde a <strong>imagem exibida é necessária para que o texto nesse contêiner seja melhor compreendido.</strong>
+    </blockquote>
+    <blockquote class="secao__texto" cite="http://www.js-craft.io/blog/when-to-use-the-img-figure-or-picture-html-tags/">
+      Isso significa que <strong>não se destina</strong> a coisas como <strong>ícones</strong>, <strong>padrões de fundo</strong> ou <strong>outras imagens</strong> que servem <strong>apenas</strong> como <strong>decoração</strong>. Para <strong>decorações</strong>, será melhor usar algo como uma <strong>background-image</strong> propriedade CSS. 
+    </blockquote>
+  </section>
+
+  <section class="secao flex" id="secao__figure">
+    <header>
+      <h2 class="secao__titulo">figure & figcaption</h2>
+      <h3 class="secao__subtitulo">Definição e uso</h3>
+    </header>
+    <blockquote class="secao__texto" cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+      O Elemento HTML <strong>blockquote</strong> (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma <strong>longa citação</strong>. Normalmente, este é processado visualmente pelo recuo. A URL para a <strong>fonte da citação</strong> pode ser dada usando o atributo <strong>cite</strong>.
+    </blockquote>
+
+    <figure class="secao__fotos">
+      <img src="paisagem/benjamin-voros-phIFdC6lA4E-unsplash.jpg" alt="Montanhas sob céu noturno estrelado, Moema - Itália" class="secao__fotos-imagens">
+      <figcaption class="secao__fotos-legenda"> Por Benjamin Voros, Moema - Itália</figcaption>
+    </figure>
+    <figure class="secao__fotos">
+      <img src="paisagem/garrett-parker-DlkF4-dbCOU-unsplash.jpg" alt="Lago Morane Lake no Canadá" class="secao__fotos-imagens">
+      <figcaption class="secao__fotos-legenda">Por Garret Parker, Moraine Lake - Canadá</figcaption>
+    </figure>
+    <figure class="secao__fotos">
+      <img src="paisagem/jonatan-pie-3l3RwQdHRHg-unsplash.jpg" alt="Canyon Stakkholtsgja" class="secao__fotos-imagens">
+      <figcaption class="secao__fotos-legenda">Por Jonatan Pie, Stakkholtsgja canyon - iceland</figcaption>
+    </figure>
+    <figure class="secao__fotos">
+      <img src="paisagem/veeterzy-sMQiL_2v4vs-unsplash.jpg" alt="Tree in forest of plants" class="secao__fotos-imagens">
+      <figcaption class="secao__fotos-legenda">Por Veeterzy, Tree in forest of plants</figcaption>
+    </figure>
+  </section>
+
+  <section class="secao" id="secao__picture">
+    <header>
+      <h2 class="secao__titulo">picture</h2>
+      <h3 class="secao__subtitulo">Definição e uso</h3>
+    </header>
+    <blockquote class="secao__texto" cite="https://www.w3schools.com/tags/tag_picture.asp">
+      A tag <strong>picture</strong> oferece aos desenvolvedores da Web mais flexibilidade na especificação de recursos de imagem.
+    </blockquote>
+    <blockquote class="secao__texto" cite="https://www.w3schools.com/tags/tag_picture.asp">
+      O uso mais comum do elemento picture será para direção de arte em designs responsivos. Em vez de ter uma imagem que é dimensionada para cima ou para baixo com base na largura da janela de visualização, várias imagens podem ser projetadas para preencher melhor a janela de visualização do navegador.
+    </blockquote>
+    <blockquote class="secao__texto" cite="https://www.w3schools.com/tags/tag_picture.asp">
+      O elemento picture contém duas tags: uma ou mais tags source e uma tag img.
+    </blockquote>
+    <blockquote class="secao__texto" cite="https://www.w3schools.com/tags/tag_picture.asp">
+      O navegador procurará o primeiro elemento source onde a consulta de mídia corresponde à largura da janela de visualização atual e, em seguida, exibirá a imagem adequada (especificada no atributo srcset). O elemento img é necessário como o último filho do elemento picture, como uma opção de fallback se nenhuma das tags de origem corresponder.
+    </blockquote>
+
+    <p class="secao__subtitulo">Redimensione a tela do navegador</p>
+
+    <picture>
+      <source media="(min-width: 1024px)" srcset="paisagem/veeterzy-sMQiL_2v4vs-unsplash.jpg">
+      <source media="(min-width: 768px)" srcset="paisagem/lucas-kapla-wQLAGv4_OYs-unsplash.jpg">
+      <source media="(min-width: 460px)" srcset="paisagem/garrett-parker-DlkF4-dbCOU-unsplash.jpg" >
+      <img src="paisagem/benjamin-voros-phIFdC6lA4E-unsplash.jpg" alt=""  class="secao__fotos-imagens">
+    </picture>
+  </section>
+</body>
+</html>
