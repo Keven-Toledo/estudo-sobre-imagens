@@ -10,7 +10,8 @@
 }
 
 .menu__hamburguer,
-.fa-solid {
+.fa-bars,
+.fa-xmark {
   display: none;
 }
 

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .botao__flutuante {
   position: fixed;
+  z-index: 2;
   right: 15vw;
   bottom: 5vh;
   display: flex;
@@ -14,9 +15,31 @@
   box-shadow: 3px 3px 1px black;
 }
 
+.botao__flutuante-link {
+  color: var(--cor__cabecalho);
+  
+}
+
 .botao__flutuante:active {
   box-shadow: none;
   color: var(--cor__cabecalho);
   right: 14.8vw;
   bottom: 4.8vh;
+}
+
+@media (max-width: 768px) {
+  .botao__flutuante {
+    right: 5vw;
+    bottom: 2vh;
+    width: 112px;
+    height: 50px;
+    border-radius: 20px;
+  }
+  .botao__flutuante:active {
+    right: 4.8vw;
+    bottom: 1.8vh;
+  }
+  .botao__flutuante-link {
+    font-size: 1.5em;
+  }
 }
